@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Box, Typography, IconButton, Collapse } from '@mui/material';
 import { ExpandMore, ExpandLess } from '@mui/icons-material';
 
+import cooking_1 from '../../src/imgs/cooking/1.png';
 import retroDither from '../../src/imgs/retro dither/1.png';
 import camera3person from '../../src/imgs/camera3pessoa/Screenshot_1.png';
-import jardim from '../../src/imgs/jardimbotanico/Screenshot_1.png';
+import jardim from '../../src/imgs/jardimbotanico/1.png';
 import abbadon from '../../src/imgs/abbadonHospice/3.png';
 import fruitninja from '../../src/imgs/fruit ninja/2.png';
 import carro from '../../src/imgs/create with code/1.png';
@@ -58,10 +59,10 @@ const projetosJogos = [
 
     { 
         id: 12,
-        titulo: 'Jogo de montagem de comida',
-        descricao: 'jogo desenvolvido para a disciplina de software educacional',
+        titulo: 'Cooking Simulator',
+        descricao: 'jogo EM DESENVOLVIMENTO para a disciplina de software educacional',
         slug: 'comida-montagem',
-        imagem: 'https://via.placeholder.com/300x200?text=Game+Aventura',
+        imagem: cooking_1,
     },
 
     { 
@@ -160,7 +161,13 @@ const videosGameDesign = [
 ];
 
 const Projetos = () => {
-  const [openSection, setOpenSection] = useState(null);
+  const location = useLocation();
+  const searchParams = new URLSearchParams(location.search);
+  const sectionFromUrl = searchParams.get('section');
+
+  const [openSection, setOpenSection] = useState(
+    sectionFromUrl !== null ? Number(sectionFromUrl) : null
+  );
 
   const toggleSection = (idx) => {
     setOpenSection(openSection === idx ? null : idx);
@@ -171,7 +178,7 @@ const Projetos = () => {
       {lista.map((projeto) => (
         <Link
           key={projeto.id}
-          to={`/projetos/${projeto.slug}`}
+          to={`/projetos/${projeto.slug}?section=${openSection}`}
           className="block rounded-lg overflow-hidden transition bg-white text-black"
           style={{
             boxShadow: '0 6px 12px rgba(0,0,0,0.1), 0 -6px 12px rgba(0,0,0,0.1)',

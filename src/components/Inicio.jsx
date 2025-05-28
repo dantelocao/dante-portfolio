@@ -7,7 +7,7 @@ import 'slick-carousel/slick/slick-theme.css';
 
 import retroDither from '../../src/imgs/retro dither/1.png';
 import camera3person from '../../src/imgs/camera3pessoa/Screenshot_1.png';
-import jardim from '../../src/imgs/jardimbotanico/Screenshot_1.png';
+import jardim from '../../src/imgs/jardimbotanico/1.png';
 
 const images = [
   {
@@ -16,11 +16,11 @@ const images = [
   },
   {
     src: camera3person,
-    link: '/'
+    link: '/projetos/terceira-pessoa'
   },
   {
     src: jardim,
-    link: '/'
+    link: '/projetos/jardim-botanico'
   }
 ];
 
