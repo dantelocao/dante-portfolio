@@ -1,10 +1,10 @@
 import React from 'react';
 import { Box, Typography, Link, IconButton } from '@mui/material';
 import EmailIcon from '@mui/icons-material/Email';
-import PhoneIcon from '@mui/icons-material/Phone';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   return (
@@ -33,9 +33,7 @@ const Footer = () => {
           sx={{ minWidth: 250, justifyContent: { xs: 'center', md: 'flex-start' } }}
         >
           <EmailIcon />
-          <Typography variant="body1">contato@literar.com</Typography>
-          <PhoneIcon sx={{ ml: 4 }} />
-          <Typography variant="body1">+55 (51) 99999-9999</Typography>
+          <Typography variant="body1">dante.dardaque@hotmail.com</Typography>
         </Box>
 
         {/* Redes sociais */}
@@ -47,19 +45,24 @@ const Footer = () => {
             flex: 1,
           }}
         >
-          <Link href="https://facebook.com" target="_blank" rel="noopener" color="inherit">
-            <IconButton aria-label="Facebook">
-              <FacebookIcon />
+          <Link href="https://www.linkedin.com/in/dante-dardaque-42b695181/" target="_blank" rel="noopener" color="inherit">
+            <IconButton aria-label="LinkedIn">
+              <LinkedInIcon />
             </IconButton>
           </Link>
-          <Link href="https://twitter.com" target="_blank" rel="noopener" color="inherit">
-            <IconButton aria-label="Twitter">
-              <TwitterIcon />
+          <Link href="https://www.youtube.com/@hexvoidgames" target="_blank" rel="noopener" color="inherit">
+            <IconButton aria-label="YouTube">
+              <YouTubeIcon />
             </IconButton>
           </Link>
-          <Link href="https://instagram.com" target="_blank" rel="noopener" color="inherit">
+          <Link href="https://www.instagram.com/hexvoidgames/" target="_blank" rel="noopener" color="inherit">
             <IconButton aria-label="Instagram">
               <InstagramIcon />
+            </IconButton>
+          </Link>
+          <Link href="https://github.com/dantelocao" target="_blank" rel="noopener" color="inherit">
+            <IconButton aria-label="GitHub">
+              <GitHubIcon />
             </IconButton>
           </Link>
         </Box>
@@ -69,7 +72,7 @@ const Footer = () => {
           sx={{ minWidth: 250, justifyContent: { xs: 'center', md: 'flex-end' }, display: 'flex' }}
         >
           <Typography variant="body2" component="p" sx={{ color: 'gray' }}>
-            © 2024 Literar. Todos os direitos reservados.
+            © 2024. Todos os direitos reservados.
           </Typography>
         </Box>
       </Box>
@@ -78,5 +81,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-

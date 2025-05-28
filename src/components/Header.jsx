@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { AppBar, Toolbar, IconButton, Drawer, List, ListItem, ListItemText, Typography, Box } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [drawerOpen, setDrawerOpen] = useState(false);
@@ -9,7 +10,10 @@ const Header = () => {
     setDrawerOpen(!drawerOpen);
   };
 
-  const navLinks = ['Início', 'Sobre', 'Projetos', 'Contato'];
+  const navLinks = [
+  { name: 'Início', path: '/' },
+  { name: 'Projetos', path: '/projetos' },
+];
 
   return (
     <>
@@ -28,16 +32,17 @@ const Header = () => {
 
           {/* Links Desktop */}
           <Box className="hidden md:flex space-x-8">
-            {navLinks.map((link) => (
-              <a
-                key={link}
-                href={`#${link.toLowerCase()}`}
-                className="hover:text-gray-700 transition-colors duration-300 font-medium"
-              >
-                {link}
-              </a>
-            ))}
-          </Box>
+          {navLinks.map((link) => (
+            <Link
+              key={link.name}
+              to={link.path}
+              className="hover:text-gray-700 transition-colors duration-300 font-medium"
+            >
+              {link.name}
+            </Link>
+          ))}
+        </Box>
+
 
           {/* Botão Mobile */}
           <Box className="md:hidden">

@@ -8,11 +8,9 @@ import Tecnologias from '../components/Tecnologias';
 const HomePage = () => {
   return (
     <>
-     <Header></Header>
      <Inicio></Inicio>
      <Sobre></Sobre>
      <Tecnologias></Tecnologias>
-     <Footer></Footer>
     </>
 )
 }
