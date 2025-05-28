@@ -28,7 +28,13 @@ const Tecnologias = () => {
   const handleToggle = () => setOpen(!open);
 
   return (
-    <Box className="bg-white text-black p-10 rounded-lg max-w-6xl mx-auto mt-20 shadow-lg">
+    <Box className="bg-white text-black p-10 rounded-lg max-w-6xl mx-auto mt-20 shadow-lg"
+          
+          style={{
+            boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)',
+          }}
+    
+    >
       <Box 
         onClick={handleToggle} 
         className="flex justify-between items-center cursor-pointer"

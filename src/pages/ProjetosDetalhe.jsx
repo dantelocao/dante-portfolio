@@ -17,8 +17,6 @@ import gym from '../../src/imgs/imagensWeb/gym.png';
 import gitapi from '../../src/imgs/imagensWeb/githubapi.png';
 
 
-
-
 const projetosJogos = [
     { 
         id: 1, 
@@ -212,7 +210,6 @@ const ProjetoDetalhe = () => {
                 height="315"
                 src={videoUrl}
                 title={`${projeto.titulo} vídeo ${idx + 1}`}
-                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
                 className="rounded shadow"

@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Box, Typography, IconButton, Collapse } from '@mui/material';
+import { ExpandMore, ExpandLess } from '@mui/icons-material';
 
 import retroDither from '../../src/imgs/retro dither/1.png';
 import camera3person from '../../src/imgs/camera3pessoa/Screenshot_1.png';
@@ -15,7 +17,6 @@ import roadmap from '../../src/imgs/imagensWeb/roadmap.png';
 import aliexpress from '../../src/imgs/imagensWeb/aliexpress.png';
 import gym from '../../src/imgs/imagensWeb/gym.png';
 import gitapi from '../../src/imgs/imagensWeb/githubapi.png';
-
 
 const projetosJogos = [
     { 
@@ -147,40 +148,127 @@ const outrosProjetos = [
   }
 ];
 
+// Lista de vídeos para a nova seção
+const videosGameDesign = [
+  { id: 1, titulo: 'Volcano island #1', url: 'https://www.youtube.com/embed/EJFQCLyLYv0' },
+  { id: 2, titulo: 'Volcano island #2', url: 'https://www.youtube.com/embed/0VEMszhZFf8' },
+  { id: 3, titulo: 'Volcano island #3', url: 'https://www.youtube.com/embed/S1R_sbqEuX8' },
+    { id: 4, titulo: 'island #1', url: 'https://www.youtube.com/embed/Eb01sjLPQ5M' },
+    { id: 5, titulo: 'island island #3', url: 'https://www.youtube.com/embed/__sVoAGROw4' },
+    { id: 6, titulo: 'island island #3', url: 'https://www.youtube.com/embed/SUDdsRWTAYk' }
+
+];
+
 const Projetos = () => {
-  const renderProjetos = (titulo, lista) => (
-    <section className="mb-12">
-      <h2 className="text-2xl font-bold mb-4">{titulo}</h2>
-      <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-        {lista.map((projeto) => (
-          <Link 
-            key={projeto.id} 
-            to={`/projetos/${projeto.slug}`} 
-            className="block border rounded-lg overflow-hidden shadow hover:shadow-lg transition"
-          >
-            <img 
-              src={projeto.imagem} 
-              alt={projeto.titulo} 
-              className="w-full h-48 object-cover"
-            />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold">{projeto.titulo}</h3>
-              <p className="text-gray-600">{projeto.descricao}</p>
-            </div>
-          </Link>
-        ))}
-      </div>
-    </section>
+  const [openSection, setOpenSection] = useState(null);
+
+  const toggleSection = (idx) => {
+    setOpenSection(openSection === idx ? null : idx);
+  };
+
+  const renderProjetos = (lista) => (
+    <Box className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      {lista.map((projeto) => (
+        <Link
+          key={projeto.id}
+          to={`/projetos/${projeto.slug}`}
+          className="block rounded-lg overflow-hidden transition bg-white text-black"
+          style={{
+            boxShadow: '0 6px 12px rgba(0,0,0,0.1), 0 -6px 12px rgba(0,0,0,0.1)',
+          }}
+        >
+          <img
+            src={projeto.imagem}
+            alt={projeto.titulo}
+            className="w-full h-48 object-cover"
+          />
+          <Box className="p-4">
+            <Typography variant="h6" component="h3" className="font-semibold">
+              {projeto.titulo}
+            </Typography>
+            <Typography className="text-gray-700">
+              {projeto.descricao}
+            </Typography>
+          </Box>
+        </Link>
+      ))}
+    </Box>
+  );
+
+  const renderVideos = (lista) => (
+    <Box className="grid gap-6 md:grid-cols-2 lg:grid-cols-3 mt-4">
+      {lista.map((video) => (
+        <Box
+          key={video.id}
+          className="w-full overflow-hidden rounded-lg transition bg-white"
+          style={{
+            boxShadow: '0 6px 12px rgba(0,0,0,0.1), 0 -6px 12px rgba(0,0,0,0.1)',
+          }}
+        >
+          <iframe
+            src={video.url}
+            title={video.titulo}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            className="w-full"
+            style={{ height: '500px' }}
+          ></iframe>
+        </Box>
+      ))}
+    </Box>
   );
 
   return (
-    <div className="p-8">
-      <h1 className="text-3xl font-bold mb-6">Meus Projetos</h1>
+    <Box
+      className="bg-white text-black p-10 rounded-lg max-w-6xl mx-auto mt-20"
+      style={{
+        boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)',
+      }}
+    >
+      <Typography variant="h4" component="h1" className="font-bold mb-10">
+        Meus Projetos
+      </Typography>
 
-      {renderProjetos('Desenvolvimento de Jogos', projetosJogos)}
-      {renderProjetos('Desenvolvimento Web', projetosWeb)}
-      {renderProjetos('Outros Projetos', outrosProjetos)}
-    </div>
+      {[
+        { titulo: 'Desenvolvimento de Jogos', lista: projetosJogos, type: 'projeto' },
+        { titulo: 'Game Design - Montagem de Cenários na Unity', lista: videosGameDesign, type: 'video' },
+        { titulo: 'Desenvolvimento Web', lista: projetosWeb, type: 'projeto' },
+        { titulo: 'Outros Projetos', lista: outrosProjetos, type: 'projeto' },
+      ].map((section, idx) => (
+        <Box
+          key={idx}
+          className="mb-6 rounded-lg overflow-hidden"
+          mt={5}
+          style={{
+            boxShadow: '0 0px 16px rgba(0,0,0,0.15), 0 0px 1px rgba(0,0,0,0.15)',
+          }}
+        >
+          <Box
+            onClick={() => toggleSection(idx)}
+            className="flex justify-between items-center cursor-pointer p-4 bg-white text-black hover:bg-gray-100 transition"
+          >
+            <Typography variant="h5" component="h2" className="font-semibold">
+              {section.titulo}
+            </Typography>
+            <IconButton>
+              {openSection === idx ? (
+                <ExpandLess className="text-black" />
+              ) : (
+                <ExpandMore className="text-black" />
+              )}
+            </IconButton>
+          </Box>
+
+          <Collapse in={openSection === idx} timeout="auto" unmountOnExit>
+            <Box className="p-4 bg-white text-black">
+              {section.type === 'projeto'
+                ? renderProjetos(section.lista)
+                : renderVideos(section.lista)}
+            </Box>
+          </Collapse>
+        </Box>
+      ))}
+    </Box>
   );
 };
 

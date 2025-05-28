@@ -5,8 +5,13 @@ import dante from '../../src/imgs/4.png'; // Substitua pelo caminho correto
 
 const Sobre = () => {
   return (
-    <Box className="bg-white text-black p-8 rounded-lg max-w-6xl mx-auto mt-20 shadow-md flex flex-col md:flex-row items-center gap-10 relative">
-      
+    <Box className="bg-white text-black p-8 rounded-lg max-w-6xl mx-auto mt-20 shadow-md flex flex-col md:flex-row items-center gap-10 relative"
+          
+      style={{
+        boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)',
+      }}
+>
+
       {/* Imagem redonda */}
       <Avatar 
         alt="Foto de Perfil"
@@ -37,7 +42,7 @@ primeira expêriencia como estagiário
           Mais sobre mim:
         </Typography>
 
-        <List dense>
+        <List dense >
           <ListItem disablePadding>
             <ListItemText primary="💻 Habilidades em React, JavaScript e desenvolvimento web." />
           </ListItem>
