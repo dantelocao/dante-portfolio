@@ -55,6 +55,7 @@ const projetosJogos = [
         imagem: retroDither,
         texto: 'Este projeto foi desenvolvido usando técnicas de dithering retro na Unity, simulando gráficos estilo 8-bit com efeitos visuais autênticos.',
         videos: [
+          'https://www.youtube.com/embed/cPzkJcCPtOI',
           'https://www.youtube.com/embed/0XiYwIpcO8U',
           'https://www.youtube.com/embed/j1xrFuLse4o',
           'https://www.youtube.com/embed/rd0URleZqN8',
@@ -120,10 +121,12 @@ const projetosJogos = [
     { 
         id: 12,
         titulo: 'Cooking Simulator',
-        descricao: 'jogo EM DESENVOLVIMENTO para a disciplina de software educacional',
+        descricao: 'jogo desenvolvido para a disciplina de software educacional (UFSM)',
         slug: 'comida-montagem',
         imagem: cooking_1,
-        videos: ['https://www.youtube.com/embed/8aJgtJv6ink'],
+        videos: ['https://www.youtube.com/embed/8aJgtJv6ink',
+                 'https://www.youtube.com/embed/g-IXz0Dnydg',
+        ],
         fotos: [
             cooking_1,
         ]

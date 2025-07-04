@@ -60,7 +60,7 @@ const projetosJogos = [
     { 
         id: 12,
         titulo: 'Cooking Simulator',
-        descricao: 'jogo EM DESENVOLVIMENTO para a disciplina de software educacional',
+        descricao: 'jogo desenvolvido para a disciplina de software educacional (UFSM)',
         slug: 'comida-montagem',
         imagem: cooking_1,
     },
