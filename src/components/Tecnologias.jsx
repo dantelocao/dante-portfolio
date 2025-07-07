@@ -57,9 +57,14 @@ const Tecnologias = () => {
               <Avatar
                 alt={name}
                 src={img}
-                sx={{ width: 180, height: 150, mb: 3, boxShadow: '0 6px 12px rgba(0,0,0,0.15)' }}
+                sx={{ width: 220, height: 180, mb: 3, boxShadow: '0 6px 12px rgba(0,0,0,0.15)' }}
               />
-              <Typography variant="body1" component="p" className="text-center font-semibold text-black">
+              <Typography
+                variant="body1"
+                component="p"
+                className="text-center font-semibold text-black"
+                sx={{ fontSize: '20px' }}
+              >
                 {name}
               </Typography>
             </Box>

@@ -1,65 +1,76 @@
 import React from 'react';
-import { Box, Typography, Avatar, List, ListItem, ListItemText, Divider } from '@mui/material';
+import {
+  Box,
+  Typography,
+  Avatar,
+  List,
+  ListItem,
+  ListItemText,
+  Divider
+} from '@mui/material';
 
-import dante from '../../src/imgs/4.png'; // Substitua pelo caminho correto
+import dante from '../../src/imgs/4.png';
+
+const sobreMim = [
+  '💻 Habilidades em React, JavaScript e desenvolvimento web.',
+  '🎮 Especialista em Unity Engine e desenvolvimento de jogos.',
+  '🌱 Sempre buscando evoluir como desenvolvedor e pessoa.',
+  '🚀 Entusiasta de novas tecnologias e frameworks.',
+  '📚 Inglês fluente.'
+];
 
 const Sobre = () => {
   return (
-    <Box className="bg-white text-black p-8 rounded-lg max-w-6xl mx-auto mt-20 shadow-md flex flex-col md:flex-row items-center gap-10 relative"
-          
-      style={{
+    <Box
+      sx={{
+        backgroundColor: 'white',
+        color: 'black',
+        p: 8,
+        borderRadius: 4,
+        maxWidth: '96rem',
+        mx: 'auto',
+        mt: 10,
         boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)',
+        display: 'flex',
+        flexDirection: { xs: 'column', md: 'row' },
+        alignItems: 'center',
+        gap: 4,
+        position: 'relative'
       }}
->
-
-      {/* Imagem redonda */}
-      <Avatar 
+    >
+      {/* Avatar */}
+      <Avatar
         alt="Foto de Perfil"
         src={dante}
-        sx={{ width: 220, height: 220 }}
-        className="shadow-lg"
+        sx={{
+          width: 220,
+          height: 220,
+          boxShadow: 3
+        }}
       />
 
-      {/* Texto e lista */}
-      <Box className="flex flex-col" sx={{ flex: 1 }}>
-        <Typography variant="h4" component="h2" className="font-bold mb-4">
-          Sobre Mim
-        </Typography>
-        <Typography variant="body1" component="p" className="leading-relaxed mb-6">
-          Atualmente focado em estudar 
-desenvolvimento web e criação de 
-jogos na Unity. Tenho paixão por 
-criação de jogos, computação gráfica e 
-pesquisa nessa área. Estou na etapa 
-final da minha graduação em sistemas 
-de informação e estou buscando minha 
-primeira expêriencia como estagiário
+      {/* Conteúdo */}
+      <Box sx={{ flex: 1 }}>
+        <Typography variant="h4" fontWeight="bold" gutterBottom>
+          Dante Dardaque Santos
         </Typography>
 
-        <Divider sx={{ mb: 2, mt: 2 }} />
+        <Typography variant="body1" sx={{ mt: 2, mb: 4, whiteSpace: 'pre-line' }}>
+          Atualmente focado em estudar desenvolvimento web e criação de jogos na Unity. Tenho paixão por criação de jogos, computação gráfica e pesquisa nessa área. Estou na etapa final da minha graduação em Sistemas de Informação e estou buscando minha primeira experiência como estagiário.
+        </Typography>
 
-        <Typography variant="h5" component="h3" className="font-semibold mb-2">
+        <Divider sx={{ my: 2 }} />
+
+        <Typography variant="h5" fontWeight="medium" gutterBottom>
           Mais sobre mim:
         </Typography>
 
-        <List dense >
-          <ListItem disablePadding>
-            <ListItemText primary="💻 Habilidades em React, JavaScript e desenvolvimento web." />
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemText primary="🎮 Especialista em Unity Engine e desenvolvimento de jogos." />
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemText primary="🌱 Sempre buscando evoluir como desenvolvedor e pessoa." />
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemText primary="🚀 Entusiasta de novas tecnologias e frameworks." />
-          </ListItem>
-          <ListItem disablePadding>
-            <ListItemText primary="📚 Inglês fluente." />
-          </ListItem>
-
-
+        <List dense>
+          {sobreMim.map((item, index) => (
+            <ListItem key={index} disablePadding>
+              <ListItemText primary={item} />
+            </ListItem>
+          ))}
         </List>
       </Box>
     </Box>

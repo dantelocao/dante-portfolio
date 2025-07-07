@@ -40,6 +40,14 @@ import aliexpress from '../../src/imgs/imagensWeb/aliexpress.png';
 import gym from '../../src/imgs/imagensWeb/gym.png';
 import gitapi from '../../src/imgs/imagensWeb/githubapi.png';
 
+import meuportfolio1 from '../../src/imgs/imagensWeb/meuportfolio/1.png';
+import meuportfolio2 from '../../src/imgs/imagensWeb/meuportfolio/2.png';
+import meuportfolio3 from '../../src/imgs/imagensWeb/meuportfolio/3.png';
+
+import literar1 from '../../src/imgs/imagensWeb/literarapp/1.png';
+import literar2 from '../../src/imgs/imagensWeb/literarapp/2.png';
+import literar3 from '../../src/imgs/imagensWeb/literarapp/3.png';
+
 // --- Projetos Jogos ---
 export const projetosJogos = [
   {
@@ -80,15 +88,7 @@ export const projetosJogos = [
     ],
     videos: ['https://www.youtube.com/embed/U_lMkL9ST1E'],
   },
-  {
-    id: 10,
-    titulo: 'Campo Minado',
-    descricao: 'Campo Minado desenvolvido em C',
-    slug: 'campo-minado',
-    imagem: campoMinado,
-    texto: 'Este projeto é uma implementação clássica do jogo Campo Minado...',
-    repositorio: 'https://github.com/dantelocao/campo_minado',
-  },
+
   {
     id: 11,
     titulo: 'Abbadon Hospice - Game Jam',
@@ -154,23 +154,31 @@ export const projetosWeb = [
   {
     id: 4,
     titulo: 'Portfolio',
-    descricao: 'Meu site pessoal',
+    descricao: 'Portfólio pessoal desenvolvido com React',
     slug: 'portfolio',
-    imagem: 'https://via.placeholder.com/300x200?text=Portfolio',
+    imagem: meuportfolio1,
+    fotos: [meuportfolio2, meuportfolio3],
+    texto: 'Este é o meu portfólio pessoal, desenvolvido com React. Aqui você pode encontrar informações sobre mim, meus projetos e habilidades. O design é responsivo e otimizado para diferentes dispositivos.',
+    repositorio: 'https://github.com/dantelocao/dante-portfolio'
   },
   {
     id: 5,
     titulo: 'RoadMaps',
-    descricao: 'Site de criação de roadmaps de estudo...',
+    descricao: 'Site de criação de roadmaps de estudo',
     slug: 'loja-virtual',
     imagem: roadmap,
+    texto: 'Nosso site é uma plataforma onde os úsuarios podem criar seus próprios Roadmaps e vizualizar os roadmaps criados pela comunidade. Os roadmaps podem ser visualizados em diferentes formatos: accordion, que permite expandir e recolher etapas, timeline, que exibe todo o conteúdo de uma vez, e também em formato de grafo gerado por inteligência artificial.',
+    repositorio: 'https://github.com/dantelocao/roadmapsApplication',
   },
   {
     id: 6,
     titulo: 'literar_app',
-    descricao: 'Site de livros desenvolvido...',
+    descricao: 'aplicação desenvolvida para a disciplina de "Programação Web" utilizando a MERN stack',
     slug: 'literar-app',
-    imagem: 'https://via.placeholder.com/300x200?text=Blog+Tech',
+    imagem: literar1,
+    fotos: [literar2, literar3],
+    texto: 'Literar é uma plataforma web feita para amantes de livros, inspirada em soluções como o Skoob. Organize sua leitura, descubra novos títulos e interaja com outros leitores! Com o Literar, suas leituras favoritas estão sempre ao seu alcance e você pode compartilhar suas opiniões com a comunidade literária.',
+    repositorio: 'https://github.com/dantelocao/literar_app',
   },
   {
     id: 7,
@@ -178,6 +186,8 @@ export const projetosWeb = [
     descricao: 'Recriação do frontend do Aliexpress com React e Tailwind',
     slug: 'ali-express-remake',
     imagem: aliexpress,
+    texto: 'O site disponibiliza produtos de diversas categorias, como eletrônicos, moda, casa, brinquedos e muito mais, vendidos por fornecedores de diferentes partes do mundo. Aparência: Possui um design dinâmico e colorido, com banners promocionais chamativos e uma interface intuitiva. Há menus bem organizados e filtros para facilitar a navegação.',
+    repositorio: 'https://github.com/dantelocao/aliexpress-remake',
   },
   {
     id: 8,
@@ -185,6 +195,8 @@ export const projetosWeb = [
     descricao: 'Consumo de API de exercícios e treinos',
     slug: 'gymstrong',
     imagem: gym,
+    texto: 'O site permite que os usuários montem seus treinos personalizados, filtrando por máquinas, músculos para encontrar vários tipos de exercícios. Também oferece dicas e recomendações de treinos. Aparência: Design clean e intuitivo, com uma interface de favoritar para a montagem do treino personalizado. As seções são bem organizadas, com áreas para filtrar os exercícios e visualizar dicas. Um design pouco chamativo com variações de branco e preto.',
+    repositorio: 'https://github.com/dantelocao/gymstrongApplication',
   },
 ];
 
@@ -197,6 +209,15 @@ export const outrosProjetos = [
     slug: 'github-api',
     imagem: gitapi,
   },
+    {
+    id: 10,
+    titulo: 'Campo Minado',
+    descricao: 'Campo Minado desenvolvido em C',
+    slug: 'campo-minado',
+    imagem: campoMinado,
+    texto: 'Este projeto é uma implementação clássica do jogo Campo Minado...',
+    repositorio: 'https://github.com/dantelocao/campo_minado',
+  },
 ];
 
 // --- Vídeos Game Design ---
@@ -205,6 +226,6 @@ export const videosGameDesign = [
   { id: 2, titulo: 'Volcano island #2', url: 'https://www.youtube.com/embed/0VEMszhZFf8' },
   { id: 3, titulo: 'Volcano island #3', url: 'https://www.youtube.com/embed/S1R_sbqEuX8' },
   { id: 4, titulo: 'island #1', url: 'https://www.youtube.com/embed/Eb01sjLPQ5M' },
-  { id: 5, titulo: 'island island #3', url: 'https://www.youtube.com/embed/__sVoAGROw4' },
-  { id: 6, titulo: 'island island #3', url: 'https://www.youtube.com/embed/SUDdsRWTAYk' },
+  { id: 5, titulo: 'island #2', url: 'https://www.youtube.com/embed/__sVoAGROw4' },
+  { id: 6, titulo: 'island #3', url: 'https://www.youtube.com/embed/SUDdsRWTAYk' },
 ];
