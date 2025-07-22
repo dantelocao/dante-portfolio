@@ -14,7 +14,7 @@ const certificacoes = [
 ];
 
 const Certificacoes = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   const handleToggle = () => setOpen(!open);
 

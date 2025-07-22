@@ -5,8 +5,8 @@ import { Link } from 'react-router-dom';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-import retroDither from '../../src/imgs/retro dither/1.png';
-import camera3person from '../../src/imgs/camera3pessoa/Screenshot_1.png';
+import retroDither from '../../src/imgs/retro dither/2.png';
+import whiteroom2 from '../../src/imgs/whiteroom/5.png';
 import jardim from '../../src/imgs/jardimbotanico/1.png';
 
 const images = [
@@ -15,8 +15,8 @@ const images = [
     link: '/projetos/game-retro-dither'
   },
   {
-    src: camera3person,
-    link: '/projetos/terceira-pessoa'
+    src: whiteroom2,
+    link: '/projetos/white-room'
   },
   {
     src: jardim,

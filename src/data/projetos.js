@@ -12,6 +12,12 @@ import retroDither3 from '../../src/imgs/retro dither/3.png';
 import retroDither4 from '../../src/imgs/retro dither/4.png';
 import retroDither5 from '../../src/imgs/retro dither/retro.png';
 
+import whiteroom1 from '../../src/imgs/whiteroom/5.png';
+import whiteroom2 from '../../src/imgs/whiteroom/6.png';
+import whiteroom3 from '../../src/imgs/whiteroom/7.png';
+import whiteroom4 from '../../src/imgs/whiteroom/8.png';
+import whiteroom5 from '../../src/imgs/whiteroom/9.png';
+
 import fruitninja from '../../src/imgs/fruit ninja/2.png';
 import fruitninja2 from '../../src/imgs/fruit ninja/1.png';
 import fruitninja3 from '../../src/imgs/fruit ninja/3.png';
@@ -50,26 +56,38 @@ import literar3 from '../../src/imgs/imagensWeb/literarapp/3.png';
 
 // --- Projetos Jogos ---
 export const projetosJogos = [
-  {
-    id: 1,
-    titulo: 'Game retro dither',
-    descricao: 'Jogo desenvolvido em Unity',
-    slug: 'game-retro-dither',
-    imagem: retroDither,
-    texto: 'Este projeto foi desenvolvido usando técnicas de dithering retro na Unity...',
+    {
+      id: 1,
+      titulo: 'Dark Fantasy RPG',
+      descricao: 'Jogo em desenvolvimento - Unity Engine',
+      slug: 'game-retro-dither',
+      imagem: retroDither2,
+      texto: 'Este projeto foi desenvolvido usando técnicas de dithering retro na Unity...',
+      videos: [
+        'https://www.youtube.com/embed/cPzkJcCPtOI',
+        'https://www.youtube.com/embed/0XiYwIpcO8U',
+        'https://www.youtube.com/embed/j1xrFuLse4o',
+        'https://www.youtube.com/embed/rd0URleZqN8',
+        'https://www.youtube.com/embed/gRT7Q0HqJlc',
+      ],
+      fotos: [retroDither, retroDither3, retroDither4, retroDither5],
+    },
+    {
+    id: 20,
+    titulo: 'The White Room',
+    descricao: 'Jogo VR em desenvolvimento - Unity Engine',
+    slug: 'white-room',
+    imagem: whiteroom1,
+    texto: 'Este projeto é um jogo de realidade virtual em desenvolvimento...',
     videos: [
-      'https://www.youtube.com/embed/cPzkJcCPtOI',
-      'https://www.youtube.com/embed/0XiYwIpcO8U',
-      'https://www.youtube.com/embed/j1xrFuLse4o',
-      'https://www.youtube.com/embed/rd0URleZqN8',
-      'https://www.youtube.com/embed/gRT7Q0HqJlc',
+      'https://www.youtube.com/embed/yk1BwnKEnMc',
     ],
-    fotos: [retroDither2, retroDither3, retroDither4, retroDither5],
+    fotos: [whiteroom2, whiteroom3, whiteroom4, whiteroom5],
   },
   {
     id: 2,
     titulo: '3rd Person Character Controller',
-    descricao: 'Animação e controle de personagem em 3ª pessoa',
+    descricao: 'Animação e controle de personagem em 3ª pessoa - Unity Engine',
     slug: 'terceira-pessoa',
     imagem: camera3person,
     texto: 'Neste projeto, implementei a animação e o controle de um personagem em 3ª pessoa...',
@@ -77,8 +95,8 @@ export const projetosJogos = [
   },
   {
     id: 3,
-    titulo: 'Jardim Botânico - RV',
-    descricao: 'Realidade virtual do jardim botânico de minha universidade',
+    titulo: 'Jardim Botânico - Realidade Virtual',
+    descricao: 'Imersão 3D do jardim botânico da UFSM - Unity Engine',
     slug: 'jardim-botanico',
     imagem: jardim,
     texto: 'Este projeto foi desenvolvido como parte de um trabalho acadêmico...',
@@ -92,7 +110,7 @@ export const projetosJogos = [
   {
     id: 11,
     titulo: 'Abbadon Hospice - Game Jam',
-    descricao: 'Este foi o meu primeiro jogo desenvolvido durante uma Game Jam...',
+    descricao: 'Este foi o meu primeiro jogo desenvolvido durante uma Game Jam',
     slug: 'abbadon-hospice',
     imagem: abbadon,
     repositorio: 'https://github.com/dantelocao/AbbadonHospice',
@@ -102,7 +120,7 @@ export const projetosJogos = [
   {
     id: 12,
     titulo: 'Cooking Simulator',
-    descricao: 'jogo desenvolvido para a disciplina de software educacional (UFSM)',
+    descricao: 'jogo desenvolvido para a disciplina de software educacional (UFSM) - Unity Engine',
     slug: 'comida-montagem',
     imagem: cooking_1,
     fotos: [cooking_1],

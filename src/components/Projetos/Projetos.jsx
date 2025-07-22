@@ -21,14 +21,12 @@ const Projetos = () => {
   const sectionFromUrl = searchParams.get('section');
 
   const [openSection, setOpenSection] = useState(
-    sectionFromUrl !== null ? Number(sectionFromUrl) : null
+    sectionFromUrl !== null ? Number(sectionFromUrl) : 0 // Abre Desenvolvimento de Jogos por padrão
   );
 
   useEffect(() => {
     if (sectionFromUrl !== null) {
       setOpenSection(Number(sectionFromUrl));
-    } else {
-      setOpenSection(null);
     }
   }, [sectionFromUrl]);
 
