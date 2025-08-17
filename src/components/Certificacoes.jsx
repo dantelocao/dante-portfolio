@@ -8,8 +8,12 @@ const certificacoes = [
     badgeId: '5f890dd9-bb16-433f-a08b-b0e6ee7d9543',
   },
   {
-    name: 'AWS Academy Cloud Foundations',
+    name: 'AWS Academy Foundations',
     badgeId: 'ad2becce-e80d-45fa-93fc-0b3c75d8e472'
+  },
+  {
+    name: 'Unity VR Development',
+    badgeId: '571b6b54-d4c4-4056-a5af-b1c34805e9da'
   }
 ];
 
