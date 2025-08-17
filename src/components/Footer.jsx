@@ -12,7 +12,7 @@ const Footer = () => {
       component="footer"
       className="bg-white text-black shadow-md p-6 mt-12 w-full"
       sx={{
-        width: '100%', // largura total da viewport
+        width: '100%', // full viewport width
       }}
     >
       <Box
@@ -27,7 +27,7 @@ const Footer = () => {
           textAlign: { xs: 'center', md: 'left' },
         }}
       >
-        {/* Contato */}
+        {/* Contact */}
         <Box
           className="flex items-center gap-4"
           sx={{ minWidth: 250, justifyContent: { xs: 'center', md: 'flex-start' } }}
@@ -36,7 +36,7 @@ const Footer = () => {
           <Typography variant="body1">dante.dardaque@hotmail.com</Typography>
         </Box>
 
-        {/* Redes sociais */}
+        {/* Social Media */}
         <Box
           sx={{
             display: 'flex',
@@ -67,12 +67,12 @@ const Footer = () => {
           </Link>
         </Box>
 
-        {/* Direitos autorais */}
+        {/* Copyright */}
         <Box
           sx={{ minWidth: 250, justifyContent: { xs: 'center', md: 'flex-end' }, display: 'flex' }}
         >
           <Typography variant="body2" component="p" sx={{ color: 'gray' }}>
-            © 2024. Todos os direitos reservados.
+            © 2024. All rights reserved.
           </Typography>
         </Box>
       </Box>

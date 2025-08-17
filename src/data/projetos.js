@@ -54,15 +54,15 @@ import literar1 from '../../src/imgs/imagensWeb/literarapp/1.png';
 import literar2 from '../../src/imgs/imagensWeb/literarapp/2.png';
 import literar3 from '../../src/imgs/imagensWeb/literarapp/3.png';
 
-// --- Projetos Jogos ---
+// --- Game Projects ---
 export const projetosJogos = [
     {
       id: 1,
       titulo: 'Dark Fantasy RPG',
-      descricao: 'Jogo em desenvolvimento - Unity Engine',
+      descricao: 'Game in development - Unity Engine',
       slug: 'game-retro-dither',
       imagem: retroDither2,
-      texto: 'Este projeto foi desenvolvido usando técnicas de dithering retro na Unity...',
+      texto: 'This project was developed using retro dithering techniques in Unity...',
       videos: [
         'https://www.youtube.com/embed/cPzkJcCPtOI',
         'https://www.youtube.com/embed/0XiYwIpcO8U',
@@ -75,10 +75,10 @@ export const projetosJogos = [
     {
     id: 20,
     titulo: 'The White Room',
-    descricao: 'Jogo VR em desenvolvimento - Unity Engine',
+    descricao: 'VR game in development - Unity Engine',
     slug: 'white-room',
     imagem: whiteroom1,
-    texto: 'Este projeto é um jogo de realidade virtual em desenvolvimento...',
+    texto: 'This project is a virtual reality game in development...',
     videos: [
       'https://www.youtube.com/embed/yk1BwnKEnMc',
     ],
@@ -87,19 +87,19 @@ export const projetosJogos = [
   {
     id: 2,
     titulo: '3rd Person Character Controller',
-    descricao: 'Animação e controle de personagem em 3ª pessoa - Unity Engine',
+    descricao: 'Animation and third-person character control - Unity Engine',
     slug: 'terceira-pessoa',
     imagem: camera3person,
-    texto: 'Neste projeto, implementei a animação e o controle de um personagem em 3ª pessoa...',
+    texto: 'In this project, I implemented animation and control of a third-person character...',
     videos: ['https://www.youtube.com/embed/3PrNp_B9lkk'],
   },
   {
     id: 3,
-    titulo: 'Jardim Botânico - Realidade Virtual',
-    descricao: 'Imersão 3D do jardim botânico da UFSM - Unity Engine',
+    titulo: 'Botanical Garden - Virtual Reality',
+    descricao: '3D immersion of the UFSM botanical garden - Unity Engine',
     slug: 'jardim-botanico',
     imagem: jardim,
-    texto: 'Este projeto foi desenvolvido como parte de um trabalho acadêmico...',
+    texto: 'This project was developed as part of an academic work...',
     fotos: [
       'https://via.placeholder.com/300x200?text=Extra+1',
       'https://via.placeholder.com/300x200?text=Extra+2',
@@ -110,7 +110,7 @@ export const projetosJogos = [
   {
     id: 11,
     titulo: 'Abbadon Hospice - Game Jam',
-    descricao: 'Este foi o meu primeiro jogo desenvolvido durante uma Game Jam',
+    descricao: 'This was my first game developed during a Game Jam',
     slug: 'abbadon-hospice',
     imagem: abbadon,
     repositorio: 'https://github.com/dantelocao/AbbadonHospice',
@@ -120,7 +120,7 @@ export const projetosJogos = [
   {
     id: 12,
     titulo: 'Cooking Simulator',
-    descricao: 'jogo desenvolvido para a disciplina de software educacional (UFSM) - Unity Engine',
+    descricao: 'Game developed for the Educational Software course (UFSM) - Unity Engine',
     slug: 'comida-montagem',
     imagem: cooking_1,
     fotos: [cooking_1],
@@ -132,113 +132,113 @@ export const projetosJogos = [
   {
     id: 13,
     titulo: 'Unity Learn - Fruit Ninja',
-    descricao: 'Jogo desenvolvido na plataforma Unity Learn',
+    descricao: 'Game developed on the Unity Learn platform',
     slug: 'fruit-ninja',
     imagem: fruitninja,
-    texto: 'O desenvolvimento técnico de um protótipo inspirado no Fruit Ninja...',
+    texto: 'The technical development of a prototype inspired by Fruit Ninja...',
     fotos: [fruitninja, fruitninja2, fruitninja3],
   },
   {
     id: 14,
     titulo: 'Unity Learn - Create With Code',
-    descricao: 'Mecânicas desenvolvidas na plataforma Unity Learn',
+    descricao: 'Mechanics developed on the Unity Learn platform',
     slug: 'create-with-code',
     imagem: createwithcode,
-    texto: 'Unity Learn é uma plataforma de estudos da própria Unity...',
+    texto: 'Unity Learn is a learning platform provided by Unity itself...',
     fotos: [createwithcode2, createwithcode3, createwithcode4],
   },
   {
     id: 15,
     titulo: 'Unity Learn - Create With Code 2',
-    descricao: 'Mecânicas desenvolvidas na plataforma Unity Learn',
+    descricao: 'Mechanics developed on the Unity Learn platform',
     slug: 'create-with-code2',
     imagem: createwithcode2_1,
-    texto: 'Neste conjunto de protótipos, explorei diversos conceitos fundamentais...',
+    texto: 'In this set of prototypes, I explored several fundamental concepts...',
     fotos: [createwithcode2_2, createwithcode2_3, createwithcode2_4],
   },
   {
     id: 16,
     titulo: 'Unity Learn - Challenge 5',
-    descricao: 'Jogo desenvolvido na plataforma Unity Learn',
+    descricao: 'Game developed on the Unity Learn platform',
     slug: 'challenge5',
     imagem: challenge5_1,
-    texto: 'Este projeto foi desenvolvido como parte do Unit 5 - Challenge...',
+    texto: 'This project was developed as part of Unit 5 - Challenge...',
     fotos: [challenge5_2, challenge5_3],
   },
 ];
 
-// --- Projetos Web ---
+// --- Web Projects ---
 export const projetosWeb = [
   {
     id: 4,
     titulo: 'Portfolio',
-    descricao: 'Portfólio pessoal desenvolvido com React',
+    descricao: 'Personal portfolio developed with React',
     slug: 'portfolio',
     imagem: meuportfolio1,
     fotos: [meuportfolio2, meuportfolio3],
-    texto: 'Este é o meu portfólio pessoal, desenvolvido com React. Aqui você pode encontrar informações sobre mim, meus projetos e habilidades. O design é responsivo e otimizado para diferentes dispositivos.',
+    texto: 'This is my personal portfolio developed with React. Here you can find information about me, my projects, and skills. The design is responsive and optimized for different devices.',
     repositorio: 'https://github.com/dantelocao/dante-portfolio'
   },
   {
     id: 5,
     titulo: 'RoadMaps',
-    descricao: 'Site de criação de roadmaps de estudo',
+    descricao: 'Study roadmap creation site',
     slug: 'loja-virtual',
     imagem: roadmap,
-    texto: 'Nosso site é uma plataforma onde os úsuarios podem criar seus próprios Roadmaps e vizualizar os roadmaps criados pela comunidade. Os roadmaps podem ser visualizados em diferentes formatos: accordion, que permite expandir e recolher etapas, timeline, que exibe todo o conteúdo de uma vez, e também em formato de grafo gerado por inteligência artificial.',
+    texto: 'Our site is a platform where users can create their own Roadmaps and view roadmaps created by the community. Roadmaps can be viewed in different formats: accordion, which allows expanding and collapsing steps; timeline, which shows all content at once; and also in a graph format generated by artificial intelligence.',
     repositorio: 'https://github.com/dantelocao/roadmapsApplication',
   },
   {
     id: 6,
     titulo: 'literar_app',
-    descricao: 'aplicação desenvolvida para a disciplina de "Programação Web" utilizando a MERN stack',
+    descricao: 'Application developed for the "Web Programming" course using the MERN stack',
     slug: 'literar-app',
     imagem: literar1,
     fotos: [literar2, literar3],
-    texto: 'Literar é uma plataforma web feita para amantes de livros, inspirada em soluções como o Skoob. Organize sua leitura, descubra novos títulos e interaja com outros leitores! Com o Literar, suas leituras favoritas estão sempre ao seu alcance e você pode compartilhar suas opiniões com a comunidade literária.',
+    texto: 'Literar is a web platform made for book lovers, inspired by solutions like Skoob. Organize your reading, discover new titles, and interact with other readers! With Literar, your favorite readings are always at your fingertips and you can share your opinions with the literary community.',
     repositorio: 'https://github.com/dantelocao/literar_app',
   },
   {
     id: 7,
     titulo: 'AliExpress - Remake',
-    descricao: 'Recriação do frontend do Aliexpress com React e Tailwind',
+    descricao: 'Frontend recreation of AliExpress with React and Tailwind',
     slug: 'ali-express-remake',
     imagem: aliexpress,
-    texto: 'O site disponibiliza produtos de diversas categorias, como eletrônicos, moda, casa, brinquedos e muito mais, vendidos por fornecedores de diferentes partes do mundo. Aparência: Possui um design dinâmico e colorido, com banners promocionais chamativos e uma interface intuitiva. Há menus bem organizados e filtros para facilitar a navegação.',
+    texto: 'The site provides products from various categories such as electronics, fashion, home, toys, and more, sold by suppliers from different parts of the world. Appearance: It has a dynamic and colorful design, with eye-catching promotional banners and an intuitive interface. There are well-organized menus and filters to facilitate navigation.',
     repositorio: 'https://github.com/dantelocao/aliexpress-remake',
   },
   {
     id: 8,
-    titulo: 'GymStrong - site de montagem de treinos',
-    descricao: 'Consumo de API de exercícios e treinos',
+    titulo: 'GymStrong - workout building site',
+    descricao: 'API consumption of exercises and workouts',
     slug: 'gymstrong',
     imagem: gym,
-    texto: 'O site permite que os usuários montem seus treinos personalizados, filtrando por máquinas, músculos para encontrar vários tipos de exercícios. Também oferece dicas e recomendações de treinos. Aparência: Design clean e intuitivo, com uma interface de favoritar para a montagem do treino personalizado. As seções são bem organizadas, com áreas para filtrar os exercícios e visualizar dicas. Um design pouco chamativo com variações de branco e preto.',
+    texto: 'The site allows users to create their personalized workouts, filtering by machines and muscles to find various types of exercises. It also offers tips and recommendations for workouts. Appearance: Clean and intuitive design, with a favoriting interface for personalized workout creation. Sections are well-organized, with areas to filter exercises and view tips. A design that is not too flashy with white and black variations.',
     repositorio: 'https://github.com/dantelocao/gymstrongApplication',
   },
 ];
 
-// --- Outros Projetos ---
+// --- Other Projects ---
 export const outrosProjetos = [
   {
     id: 9,
     titulo: 'github_api',
-    descricao: 'Exemplo de consumo de API do GitHub',
+    descricao: 'Example of GitHub API consumption',
     slug: 'github-api',
     imagem: gitapi,
   },
     {
     id: 10,
-    titulo: 'Campo Minado',
-    descricao: 'Campo Minado desenvolvido em C',
+    titulo: 'Minesweeper',
+    descricao: 'Minesweeper developed in C',
     slug: 'campo-minado',
     imagem: campoMinado,
-    texto: 'Este projeto é uma implementação clássica do jogo Campo Minado...',
+    texto: 'This project is a classic implementation of the Minesweeper game...',
     repositorio: 'https://github.com/dantelocao/campo_minado',
   },
 ];
 
-// --- Vídeos Game Design ---
+// --- Game Design Videos ---
 export const videosGameDesign = [
   { id: 1, titulo: 'Volcano island #1', url: 'https://www.youtube.com/embed/EJFQCLyLYv0' },
   { id: 2, titulo: 'Volcano island #2', url: 'https://www.youtube.com/embed/0VEMszhZFf8' },

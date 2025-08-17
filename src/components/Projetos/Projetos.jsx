@@ -9,10 +9,10 @@ import ProjetosGrid from './ProjetosGrid';
 import VideosGrid from './VideosGrid';
 
 const SECTIONS = [
-  { titulo: 'Desenvolvimento de Jogos', lista: projetosJogos, type: 'projeto' },
-  { titulo: 'Game Design - Montagem de Cenários na Unity', lista: videosGameDesign, type: 'video' },
-  { titulo: 'Desenvolvimento Web', lista: projetosWeb, type: 'projeto' },
-  { titulo: 'Outros Projetos', lista: outrosProjetos, type: 'projeto' },
+  { titulo: 'Game Development', lista: projetosJogos, type: 'projeto' },
+  { titulo: 'Game Design', lista: videosGameDesign, type: 'video' },
+  { titulo: 'Web Development', lista: projetosWeb, type: 'projeto' },
+  { titulo: 'Other Projects', lista: outrosProjetos, type: 'projeto' },
 ];
 
 const Projetos = () => {
@@ -21,7 +21,7 @@ const Projetos = () => {
   const sectionFromUrl = searchParams.get('section');
 
   const [openSection, setOpenSection] = useState(
-    sectionFromUrl !== null ? Number(sectionFromUrl) : 0 // Abre Desenvolvimento de Jogos por padrão
+    sectionFromUrl !== null ? Number(sectionFromUrl) : 0 // Opens Game Development by default
   );
 
   useEffect(() => {
@@ -40,7 +40,7 @@ const Projetos = () => {
       style={{ boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)' }}
     >
       <Typography variant="h4" component="h1" className="font-bold mb-10">
-        Meus Projetos
+        My Projects
       </Typography>
 
       {SECTIONS.map(({ titulo, lista, type }, idx) => (

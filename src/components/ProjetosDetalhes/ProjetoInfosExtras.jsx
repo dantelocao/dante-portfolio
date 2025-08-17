@@ -2,7 +2,7 @@ const ProjetoInfosExtras = ({ projeto }) => (
   <>
     {projeto.repositorio && (
       <p className="mb-4 text-gray-600">
-        Repositório: <a href={projeto.repositorio} className="text-blue-500 underline">{projeto.repositorio}</a>
+        Repository: <a href={projeto.repositorio} className="text-blue-500 underline">{projeto.repositorio}</a>
       </p>
     )}
     {projeto.link && (

@@ -43,7 +43,7 @@ const Certificacoes = () => {
         className="flex justify-between items-center cursor-pointer"
       >
         <Typography variant="h4" component="h2" className="font-bold text-black">
-          Certificados
+          Certifications
         </Typography>
         <IconButton>{open ? <ExpandLess /> : <ExpandMore />}</IconButton>
       </Box>
@@ -68,7 +68,7 @@ const Certificacoes = () => {
             >
               <Box
                 sx={{
-                  transform: 'scale(1.15)', // aumenta visualmente o iframe sem precisar de bloco maior
+                  transform: 'scale(1.15)', // visually enlarges the iframe without needing a bigger block
                   transformOrigin: 'top center',
                 }}
               >

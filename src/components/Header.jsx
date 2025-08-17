@@ -11,26 +11,26 @@ const Header = () => {
   };
 
   const navLinks = [
-  { name: 'Início', path: '/' },
-  { name: 'Projetos', path: '/projetos' },
+  { name: 'Home', path: '/' },
+  { name: 'Projects', path: '/projetos' },
 ];
 
   return (
     <>
       <AppBar 
         position="sticky" 
-        elevation={0}  // Remove sombra exagerada do MUI, já usamos shadow-md do Tailwind
-        sx={{ backgroundColor: 'white', color: 'black' }} // COR CERTA
+        elevation={0}  // Remove excessive shadow from MUI, we already use Tailwind shadow-md
+        sx={{ backgroundColor: 'white', color: 'black' }} // Correct color
         className="shadow-md"
       >
         <Toolbar className="flex justify-between items-center px-6 py-3">
 
           {/* Logo */}
           <Typography variant="h6" className="font-bold">
-            MeuPortfólio
+            MyPortfolio
           </Typography>
 
-          {/* Links Desktop */}
+          {/* Desktop Links */}
           <Box className="space-x-8">
           {navLinks.map((link) => (
             <Link

@@ -12,11 +12,11 @@ import {
 import dante from '../../src/imgs/4.png';
 
 const sobreMim = [
-  '💻 Habilidades em React, JavaScript e desenvolvimento web.',
-  '🎮 Especialista em Unity Engine e desenvolvimento de jogos.',
-  '🌱 Sempre buscando evoluir como desenvolvedor e pessoa.',
-  '🚀 Entusiasta de novas tecnologias e frameworks.',
-  '📚 Inglês fluente.'
+  '💻 Skills in React, JavaScript, and web development.',
+  '🎮 Specialist in Unity Engine and game development.',
+  '🌱 Always seeking to grow as a developer and as a person.',
+  '🚀 Enthusiast of new technologies and frameworks.',
+  '📚 Fluent in English.'
 ];
 
 const Sobre = () => {
@@ -40,7 +40,7 @@ const Sobre = () => {
     >
       {/* Avatar */}
       <Avatar
-        alt="Foto de Perfil"
+        alt="Profile Picture"
         src={dante}
         sx={{
           width: 220,
@@ -56,13 +56,13 @@ const Sobre = () => {
         </Typography>
 
         <Typography variant="body1" sx={{ mt: 2, mb: 4, whiteSpace: 'pre-line' }}>
-          Atualmente focado em estudar desenvolvimento web e criação de jogos na Unity. Tenho paixão por criação de jogos, computação gráfica e pesquisa nessa área. Estou na etapa final da minha graduação em Sistemas de Informação e estou buscando minha primeira experiência como estagiário.
+          Currently focused on studying web development and game creation in Unity. I have a passion for game design, computer graphics, and research in this area. I am in the final stage of my Information Systems degree and I am seeking my first experience as an intern.
         </Typography>
 
         <Divider sx={{ my: 2 }} />
 
         <Typography variant="h5" fontWeight="medium" gutterBottom>
-          Mais sobre mim:
+          More about me:
         </Typography>
 
         <List dense>
