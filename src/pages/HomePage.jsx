@@ -9,10 +9,9 @@ import Certificacoes from '../components/Certificacoes';
 const HomePage = () => {
   return (
     <>
-      <Carrossel></Carrossel>
       <Sobre></Sobre>
+      <Carrossel></Carrossel>
       <Certificacoes></Certificacoes>
-      <Tecnologias></Tecnologias>
     </>
 )
 }

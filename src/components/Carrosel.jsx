@@ -41,14 +41,14 @@ const Carrossel = () => {
   };
 
   return (
-    <div className="w-full h-auto max-h-[600px]">
+    <div className="w-full h-auto max-h-[700px] mt-8"> {/* aumentei max-h e adicionei margin-top */}
       <Slider {...settings}>
         {images.map(({ src, link }, idx) => (
           <Link to={link} key={idx} className="block w-full h-auto">
             <img
               src={src}
               alt={`Slide ${idx + 1}`}
-              className="w-full object-cover max-h-[600px]"
+              className="w-full object-cover max-h-[700px]" // aumentei para 700px
               loading="lazy"
             />
           </Link>

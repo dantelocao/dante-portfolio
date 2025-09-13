@@ -36,7 +36,7 @@ const Projetos = () => {
 
   return (
     <Box
-      className="bg-white text-black p-10 rounded-lg max-w-6xl mx-auto mt-20"
+      className="bg-white text-black p-10 rounded-lg max-w-7xl mx-auto mt-20"
       style={{ boxShadow: '0 8px 16px rgba(0,0,0,0.15), 0 -8px 16px rgba(0,0,0,0.15)' }}
     >
       <Typography variant="h4" component="h1" className="font-bold mb-10">
