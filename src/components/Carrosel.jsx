@@ -8,20 +8,25 @@ import 'slick-carousel/slick/slick-theme.css';
 import retroDither from '../../src/imgs/retro dither/2.png';
 import whiteroom2 from '../../src/imgs/whiteroom/5.png';
 import jardim from '../../src/imgs/jardimbotanico/1.png';
+import acervo3d from '../../src/imgs/acervo3d/imagem.png';
 
 const images = [
   {
-    src: retroDither,
-    link: '/projetos/game-retro-dither'
+    src: acervo3d,
+    link: '/projetos/acervo-ufsm'
   },
   {
     src: whiteroom2,
     link: '/projetos/white-room'
   },
   {
+    src: retroDither,
+    link: '/projetos/game-retro-dither'
+  },
+  {
     src: jardim,
     link: '/projetos/jardim-botanico'
-  }
+  },
 ];
 
 import { NextArrow, PrevArrow } from '../customs/Arrows'; // Importando os componentes de seta

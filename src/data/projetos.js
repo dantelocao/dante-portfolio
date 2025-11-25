@@ -54,8 +54,23 @@ import literar1 from '../../src/imgs/imagensWeb/literarapp/1.png';
 import literar2 from '../../src/imgs/imagensWeb/literarapp/2.png';
 import literar3 from '../../src/imgs/imagensWeb/literarapp/3.png';
 
+import acervo1 from '../../src/imgs/acervo3d/imagem.png';
+
 // --- Game Projects ---
 export const projetosJogos = [
+    {
+      id: 40,
+      titulo: 'Acervo 3D - UFSM',
+      descricao: 'Plataforma Online para criar cenários e expor em site - Unity Engine',
+      slug: 'acervo-ufsm',
+      imagem: acervo1,
+      texto: 'Unity engine Web Gl Build - Plataforma de criar cenários 3D para expor obras do acervo da UFSM',
+      videos: [
+        'https://www.youtube.com/embed/cPzkJcCPtOI',,
+      ],
+      fotos: [acervo1],
+
+    },
     {
       id: 1,
       titulo: 'Dark Fantasy RPG',
@@ -85,13 +100,16 @@ export const projetosJogos = [
     fotos: [whiteroom2, whiteroom3, whiteroom4, whiteroom5],
   },
   {
-    id: 2,
-    titulo: '3rd Person Character Controller',
-    descricao: 'Animation and third-person character control - Unity Engine',
-    slug: 'terceira-pessoa',
-    imagem: camera3person,
-    texto: 'In this project, I implemented animation and control of a third-person character...',
-    videos: ['https://www.youtube.com/embed/3PrNp_B9lkk'],
+    id: 12,
+    titulo: 'Cooking Simulator',
+    descricao: 'Game developed for the Educational Software course (UFSM) - Unity Engine',
+    slug: 'comida-montagem',
+    imagem: cooking_1,
+    fotos: [cooking_1],
+    videos: [
+      'https://www.youtube.com/embed/8aJgtJv6ink',
+      'https://www.youtube.com/embed/g-IXz0Dnydg',
+    ],
   },
   {
     id: 3,
@@ -106,7 +124,15 @@ export const projetosJogos = [
     ],
     videos: ['https://www.youtube.com/embed/U_lMkL9ST1E'],
   },
-
+  {
+    id: 2,
+    titulo: '3rd Person Character Controller',
+    descricao: 'Animation and third-person character control - Unity Engine',
+    slug: 'terceira-pessoa',
+    imagem: camera3person,
+    texto: 'In this project, I implemented animation and control of a third-person character...',
+    videos: ['https://www.youtube.com/embed/3PrNp_B9lkk'],
+  },
   {
     id: 11,
     titulo: 'Abbadon Hospice - Game Jam',
@@ -116,18 +142,6 @@ export const projetosJogos = [
     repositorio: 'https://github.com/dantelocao/AbbadonHospice',
     link: 'https://dante150ml.itch.io/abbadon-hospice',
     fotos: [abbadon2, abbadon3, abbadon4, abbadon5, abbadon6],
-  },
-  {
-    id: 12,
-    titulo: 'Cooking Simulator',
-    descricao: 'Game developed for the Educational Software course (UFSM) - Unity Engine',
-    slug: 'comida-montagem',
-    imagem: cooking_1,
-    fotos: [cooking_1],
-    videos: [
-      'https://www.youtube.com/embed/8aJgtJv6ink',
-      'https://www.youtube.com/embed/g-IXz0Dnydg',
-    ],
   },
   {
     id: 13,
