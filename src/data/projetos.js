@@ -65,8 +65,10 @@ export const projetosJogos = [
       slug: 'acervo-ufsm',
       imagem: acervo1,
       texto: 'Unity engine Web Gl Build - Plataforma de criar cenários 3D para expor obras do acervo da UFSM',
+      repositorio: 'https://elc1074.github.io/2025b/portfolio/group8/',
+      link:'https://projetosoftware2.vercel.app/',
       videos: [
-        'https://www.youtube.com/embed/cPzkJcCPtOI',,
+        'https://www.youtube.com/embed/gE87RAySKgE?si=W5Aej9RanFHioEKy',,
       ],
       fotos: [acervo1],
 
